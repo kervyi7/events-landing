@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>IT Warsaw Event</title>
+  <script src="./scripts.js">
+
+  </script>
+</head>
+
+<body onload="interval()">
+  <main>
+    <section class="home-section">
+      <div class="welcome-block">
+        <img src="./img/main-svg.svg" alt="logo">
+        <h1>Attend iconic IT & Data Science community event</h1>
+        <div class="event-days-container">
+          <div>
+            <p><span>04.04.2025</span> Online</p>
+          </div>
+          <div>
+            <p><span>05.04.2025</span> MiNI, Warsaw University of Technology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="description-section">
+      <h2>Warsaw IT Days is an iconic event of the Polish IT and Data Science community,
+        which gathers over<br>
+        <span>10,000</span><br>
+        people every year.
+      </h2>
+    </section>
+
+    <section class="agenda-section">
+      <h2>Agenda</h2>
+      <p>Check Agenda 2025 - Selected by practitioners, the most interesting speeches on trends, latest solutions and
+        production experiences.</p>
+      <div class="tabs-container" id="tabs">
+        <div>
+          <button id="btn1" onclick="toggleButtons('btn1', 'btn2')" disabled>
+            04.04.2025 | Online
+          </button>
+        </div>
+        <div>
+          <button id="btn2" onclick="toggleButtons('btn2', 'btn1')">
+            05.04.2025 | Onsite
+          </button>
+        </div>
+      </div>
+      <div class="agenda-container" id="online">
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>08:30-09:00</p>
+          <p>Official Openning - Online</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>09:00-10:35</p>
+          <p>AI Malware and the Future of Cyber Defense</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>11:00-13:00</p>
+          <p>The truth behind game development process</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>13:00-13:35</p>
+          <p>Agent Evaluation for Farmer Chatbots</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>14:35-15:35</p>
+          <p>Bringing the Power to Mobile</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>15:40-17:00</p>
+          <p>Introducing design system into mature codebase</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>17:00-18:00</p>
+          <p>Technical Analysis libraries in Python</p>
+        </div>
+      </div>
+
+      <div class="agenda-container" id="onsite" style="display: none;">
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>08:30-09:00</p>
+          <p>Registration opening</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>09:00-10:35</p>
+          <p>The Human Factor in Cybersecurity - Trends & Case Studies</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>11:00-13:00</p>
+          <p>Can AI be fair? Discrimination and bias in AI/ML models</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>13:00-14:35</p>
+          <p>Lunch break</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>14:35-15:35</p>
+          <p>How to survive in the world with AI being programer</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>15:40-17:00</p>
+          <p>Bringing the Power to Mobile</p>
+        </div>
+        <div class="agenda-item">
+          <img src="./img/clock.svg">
+          <p>17:00-18:00</p>
+          <p>GenAI on Your Own Terms – Open Large Language Models in Action</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-section">
+      <h2>Find out why you should join</h2>
+      <div class="benefits-container">
+        <div class="benefits-item">
+          <h3>
+            Knowledge
+          </h3>
+          <ul>
+            <li>Selected by practitioners, the most interesting speeches on trends, latest solutions and production
+              experience</li>
+            <li>Same specifics and practical knowledge not available in tutorials</li>
+            <li>Top speakers from Poland and abroad</li>
+            <li>Topics at every level</li>
+            <li>3-month access to 2025 speech recordings</li>
+          </ul>
+        </div>
+        <div class="benefits-item">
+          <h3>
+            Networking
+          </h3>
+          <ul>
+            <li>Largest Polish IT / Data Science community</li>
+            <li>Dedicated matchmaking application</li>
+            <li>Meetings, discussions and exchange of experiences</li>
+            <li>Evening afterparty with speakers</li>
+          </ul>
+        </div>
+        <div class="benefits-item">
+          <h3>
+            Career
+          </h3>
+          <ul>
+            <li>All major IT / Data Science employers in one place</li>
+            <li>Access to non-public offerings at junior / mid / senior level</li>
+            <li>1:1 meetings with leading employers in the industry, online or onsite</li>
+            <li>Ability to apply to all IT Job Fair exhibitors at once, even without a resume</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="organizers-section">
+      <h2>Event organizers</h2>
+      <div class="organizers-container">
+        <img src="https://cdn.warszawskiedniinformatyki.pl/i/microsoft.f92f4e0b.svg" alt="logo">
+        <img src="https://cdn.warszawskiedniinformatyki.pl/i/mini-pw-logo-w.5fc22d21.svg" alt="logo">
+        <img src="https://cdn.warszawskiedniinformatyki.pl/i/fap-white.15c987e4.svg" alt="logo">
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>See what previous editions looked like</h2>
+      <div class="gallery-container">
+        <div class="main-image">
+          <img src="./img/1.jpg" alt="Picture 1" id="mainImg">
+        </div>
+        <div class="mini-gallery">
+          <img src="./img/1.jpg" alt="Picture 1" onclick="selectImage(1)">
+          <img src="./img/2.jpg" alt="Picture 2" onclick="selectImage(2)">
+          <img src="./img/3.jpg" alt="Picture 3" onclick="selectImage(3)">
+          <img src="./img/4.jpg" alt="Picture 4" onclick="selectImage(4)">
+          <img src="./img/5.jpg" alt="Picture 5" onclick="selectImage(5)">
+          <img src="./img/6.jpg" alt="Picture 6" onclick="selectImage(6)">
+        </div>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/81kHAcpZ-sA" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IT Warsaw Event</p>
+  </footer>
+</body>
+
+</html>
